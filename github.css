@@ -3,6 +3,10 @@
   --control-text-color: #777;
   --select-text-bg-color: #d9d0bc;
   --rawblock-edit-panel-bd: rgb(250, 245, 222);
+  --blur-text-color:#B3B3B3;
+  --title-color:#D94F8A;
+  --a-color:#315c86;
+  --title-font-family:"楷体";
 }
 
 @include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
@@ -70,7 +74,7 @@ body > *:last-child {
   margin-bottom: 0 !important;
 }
 a {
-  color: #315c86;
+  color: var(--a-color);
 }
 h1,
 h2,
@@ -164,7 +168,7 @@ h6 code {
 }
 
 .md-toc-h1:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h1toc;
   content: "";
 }
@@ -174,7 +178,7 @@ h6 code {
 }
 
 .md-toc-h2:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h2toc;
   content: counter(h2toc) " ";
 }
@@ -184,7 +188,7 @@ h6 code {
 }
 
 .md-toc-h3:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h3toc;
   content: counter(h2toc) "." counter(h3toc) " ";
 }
@@ -194,7 +198,7 @@ h6 code {
 }
 
 .md-toc-h4:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h4toc;
   content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) " ";
 }
@@ -204,7 +208,7 @@ h6 code {
 }
 
 .md-toc-h5:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h5toc;
   content: "(" counter(h5toc) ") ";
 }
@@ -214,7 +218,7 @@ h6 code {
 }
 
 .md-toc-h6:before {
-  color: #315c86;
+  color: var(--a-color);
   counter-increment: h6toc;
   content: counter(h6toc) ") ";
 }
@@ -334,13 +338,13 @@ h6.md-focus:before {
   line-height: inherit;
 }
 h1 {
-  font-family: "楷体";
+  font-family: var(--title-font-family);
   padding-bottom: 0.3em;
   font-size: 3em;
   line-height: 1.2;
   border-bottom: 1px solid #9b9692;
   counter-reset: h2;
-  color:#D94F8A;
+  color:var(--title-color);
 }
 h2 {
   padding-bottom: 0.3em;
@@ -348,32 +352,32 @@ h2 {
   line-height: 1.225;
   /*border-bottom: 1px solid #9b9692;*/
   counter-reset: h3;
-  color:#D94F8A;
-  font-family: "楷体";
+  color:var(--title-color);
+  font-family: var(--title-font-family);
 }
 h3 {
   font-size: 1.5em;
   line-height: 1.43;
   counter-reset: h4;
-  color:#D94F8A;
-  font-family: "楷体";
+  color:var(--title-color);
+  font-family: var(--title-font-family);
 }
 h4 {
   font-size: 1.25em;
   counter-reset: h5;
-  color:#D94F8A;
-  font-family: "楷体";
+  color:var(--title-color);
+  font-family: var(--title-font-family);
 }
 h5 {
   font-size: 1em;
   counter-reset: h6;
-  color:#D94F8A;
-  font-family: "楷体";
+  color:var(--title-color);
+  font-family: var(--title-font-family);
 }
 h6 {
   font-size: 1em;
-  color:#D94F8A;
-  font-family: "楷体";
+  color:var(--title-color);
+  font-family: var(--title-font-family);
 }
 p,
 blockquote,
@@ -567,6 +571,9 @@ tt {
 .md-fences {
   background-color: rgb(255, 250, 227); /*code block bg color*/
   color: rgb(239, 159, 80); /*comma*/
+}
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property{
+  color:var(--title-color);
 }
 .cm-s-inner .cm-comment {
   color: #3f4450; /*comment color*/
