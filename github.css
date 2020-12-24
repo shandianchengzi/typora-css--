@@ -29,9 +29,9 @@
 
 @font-face {
   font-family: "math";
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
-  src: url("./NEWS-701-ITALIC-BT.ttf") ;
+  src: url("./MathJax_Main.woff2.ttf") ;
 }
 
 @font-face {
