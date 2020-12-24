@@ -7,6 +7,8 @@
   --title-color:#D94F8A;
   --a-color:#315c86;
   --title-font-family:"楷体";
+  --body-font-family:"楷体";
+  --math-font-family2:"Palatino Linotype";
 }
 
 @include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
@@ -23,6 +25,13 @@
   font-style: italic;
   font-weight: normal;
   src: local("Open Sans Italic"), url("./github/400i.woff") format("woff");
+}
+
+@font-face {
+  font-family: "math";
+  font-style: italic;
+  font-weight: normal;
+  src: url("./NEWS-701-ITALIC-BT.ttf") ;
 }
 
 @font-face {
@@ -44,7 +53,7 @@ html {
 }
 
 body {
-  font-family: "Palatino Linotype", "楷体", "Clear Sans", "Helvetica Neue",
+  font-family: "math", var(--body-font-family), "Clear Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   background-color: #d9d0bc; /*body bg color*/
   line-height: 1.6;
