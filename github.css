@@ -1,12 +1,12 @@
 :root {
   --side-bar-bg-color: #d9d0bc;
   --control-text-color: #777;
-  --select-text-bg-color: #d9d0bc;
+  --select-text-bg-color: #b8b09e;
   --rawblock-edit-panel-bd: rgb(250, 245, 222);
   --blur-text-color:#B3B3B3;
   --title-color:#D94F8A;
   --a-color:#315c86;
-  --title-font-family:"楷体";
+  --title-font-family:"Times New Roman","楷体";
   --body-font-family:"楷体";
   --math-font-family2:"Palatino Linotype";
 }
@@ -50,12 +50,12 @@
 
 html {
   font-size: 16px;
+  background-color: #d9d0bc; /*body bg color*/
 }
 
 body {
   font-family: "math", var(--body-font-family), "Clear Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  background-color: #d9d0bc; /*body bg color*/
   line-height: 1.6;
 }
 
