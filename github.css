@@ -6,9 +6,13 @@
   --blur-text-color:#B3B3B3;
   --title-color:#D94F8A;
   --a-color:#315c86;
-  --title-font-family:"Times New Roman","楷体";
-  --body-font-family:"楷体";
+  --title-font-family:"Times New Roman", "楷体";
+  --body-font-family:"Times New Roman", "楷体";
   --math-font-family2:"Palatino Linotype";
+}
+
+strong{
+  font-weight:900;
 }
 
 @include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
