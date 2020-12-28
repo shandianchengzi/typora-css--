@@ -61,7 +61,7 @@ html {
 }
 
 body {
-  font-family: "math", "math_loc", var(--body-font-family), "Clear Sans", "Helvetica Neue",
+  font-family: "math", "math_loc", "Mathjax_main", var(--body-font-family), "Clear Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
