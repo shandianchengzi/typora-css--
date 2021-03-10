@@ -596,13 +596,13 @@ tt {
   color:var(--title-color);
 }
 .cm-s-inner .cm-comment {
-  color: #3f4450; /*comment color*/
+  color: #c2a5ed; /*comment color*/
 }
 .cm-s-inner .cm-keyword {
   color: #c678dd; /*function*/
 }
 .cm-s-inner .cm-def {
-  color: #f9f2f4;
+  color: #60a8cc;
 }
 .cm-s-inner .cm-operator {
   color: #b75bd0;
